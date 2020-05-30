@@ -1,0 +1,67 @@
+{
+  "users": [
+    {
+      "email": "michal@kursreacta.pl",
+      "password": "$2a$10$bHSWPI5ke02BStAUHXgi4ec88fs1S299qHL8iRACJGsP54pgczjqS",
+      "id": 1
+    },
+    {
+      "email": "hubert@example.com",
+      "password": "$2a$10$8UzZYd/gn2T.3vgFwZNdlOoG90m1/j1u55nTilAQTrbNp1gGhQPsK",
+      "id": 2
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "date": "2020-02-03",
+      "done": false,
+      "finishDate": null,
+      "name": "nauczyć się js es 6",
+      "priority": false
+    },
+    {
+      "id": 2,
+      "date": "2020-02-04",
+      "done": false,
+      "finishDate": null,
+      "name": "nauczyć się biblioteki axios",
+      "priority": true
+    },
+    {
+      "id": 3,
+      "date": "2020-03-03",
+      "done": false,
+      "finishDate": null,
+      "name": "zainstalować linuxa",
+      "priority": false
+    },
+    {
+      "id": 4,
+      "name": "zrobić api w laravelu",
+      "priority": false,
+      "date": "2020-04-09",
+      "done": false,
+      "finishDate": null
+    },
+    {
+      "action": {
+        "type": "TASK_EDIT_START",
+        "task": {
+          "name": "nauka axiosa",
+          "priority": "",
+          "date": "2020-05-28",
+          "done": false,
+          "finishDate": null,
+          "id": 5
+        }
+      },
+      "name": "nauka axiosa",
+      "priority": "",
+      "date": "2020-05-28",
+      "done": false,
+      "finishDate": null,
+      "id": 5
+    }
+  ]
+}
