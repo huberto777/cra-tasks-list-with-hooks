@@ -8,7 +8,6 @@ const validate = (values) => {
   } else if (values.name.length < 3) {
     errors.name = "Must have min 3 characters";
   }
-
   return errors;
 };
 
@@ -42,7 +41,7 @@ const EditTask = ({ update, edit, task }) => {
         </div>
         <div className="form-group">
           <button className="btn btn-block btn-outline-warning" type="submit">
-            Submit
+            Edytuj
           </button>
         </div>
         <div className="form-group">

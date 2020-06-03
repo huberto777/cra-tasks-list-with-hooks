@@ -13,6 +13,17 @@
   ],
   "tasks": [
     {
+      "action": {
+        "type": "TASK_EDIT_START",
+        "task": {
+          "id": 1,
+          "date": "2020-02-03",
+          "done": false,
+          "finishDate": null,
+          "name": "nauczyć się js es 6",
+          "priority": false
+        }
+      },
       "id": 1,
       "date": "2020-02-03",
       "done": false,

@@ -1,4 +1,5 @@
 import React from "react";
+import penIcon from "../assets/pen.svg";
 
 function TaskTableRow(props) {
   const { name, done, finishDate, priority, date } = props.task;
@@ -32,7 +33,7 @@ function TaskTableRow(props) {
           onClick={props.onEdit}
           disabled={isFinished}
         >
-          edit
+          edit<penIcon/>
         </button>
       </td>
       <td>

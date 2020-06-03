@@ -62,7 +62,7 @@ const AddTask = ({ addTask }) => {
           </label>
         </div>
         <button className="btn btn-block btn-outline-warning" type="submit">
-          Submit
+          Dodaj
         </button>
       </form>
     </>

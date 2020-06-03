@@ -1,10 +1,9 @@
 import React, { useReducer, useEffect, useContext } from "react";
-import "./App.css";
 import AuthContext from "../context/AuthContext";
 import AddTask from "./AddTask";
 import TaskTable from "./TaskTable";
 import EditTask from "./EditTask";
-import TasksAPI from "./api/AxiosTasksApi";
+import TasksAPI from "../api/AxiosTasksApi";
 import { tasksReducer } from "../reducers";
 import {
   setTasks,

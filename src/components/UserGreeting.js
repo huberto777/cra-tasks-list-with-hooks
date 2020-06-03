@@ -9,8 +9,8 @@ function UserGreeting({ onLogout }) {
       {accessToken ? (
         <>
           <div className="card-body">
-            <h3 className="card-title">TASKS LIST</h3>
-            <p className="card-text">
+            <h3 className="card-title text-center">TASKS LIST</h3>
+            <p className="card-text text-right">
               Witaj {getUserEmail(accessToken)} /
               <a href="#" className="" onClick={onLogout}>
                 wyloguj się

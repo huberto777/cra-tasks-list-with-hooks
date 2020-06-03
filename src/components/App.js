@@ -3,7 +3,7 @@ import React from "react";
 import ErrorBoundary from "./ErrorBoundary";
 import LoginForm from "./LoginForm";
 import AuthContext from "../context/AuthContext";
-import AuthAPI from "./api/AxiosAuthApi";
+import AuthAPI from "../api/AxiosAuthApi";
 import jwt from "jsonwebtoken";
 
 const AuthApp = React.lazy(() => import("./AuthApp"));
