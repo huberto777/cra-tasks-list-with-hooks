@@ -16,7 +16,7 @@ import {
   searchInput,
   searchTask,
 } from "../actions";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import SearchTask from "./SearchTask";
 
 function TaskList() {
