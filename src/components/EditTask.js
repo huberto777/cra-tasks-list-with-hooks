@@ -1,12 +1,12 @@
-import React from "react";
-import { useFormik } from "formik";
+import React from 'react';
+import { useFormik } from 'formik';
 
 const validate = (values) => {
   const errors = {};
   if (!values.name) {
-    errors.name = "Required";
+    errors.name = 'Required';
   } else if (values.name.length < 3) {
-    errors.name = "Must have min 3 characters";
+    errors.name = 'Must have min 3 characters';
   }
   return errors;
 };

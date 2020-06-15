@@ -1,7 +1,7 @@
-import React from "react";
-import TaskList from "./TaskList";
-import Header from "./Header";
-import UserGreeting from "./UserGreeting";
+import React from 'react';
+import TaskList from './TaskList';
+import Header from './Header';
+import UserGreeting from './UserGreeting';
 
 function AuthApp({ onLogout }) {
   return (
