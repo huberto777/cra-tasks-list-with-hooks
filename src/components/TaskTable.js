@@ -1,7 +1,7 @@
-import React from "react";
-import TaskTableRow from "./TaskTableRow";
+import React from 'react';
+import TaskTableRow from './TaskTableRow';
 
-function TaskTable(props) {
+function TaskTable({ tasks, del, done, edit }) {
   return (
     <table className="table table-info table-hover table-striped table-responsive{-sm|-md|-lg|-xl}">
       <thead>
@@ -16,14 +16,14 @@ function TaskTable(props) {
         </tr>
       </thead>
       <tbody>
-        {props.tasks.map((task, index) => (
+        {tasks.map((task, index) => (
           <TaskTableRow
             key={task.id}
             index={index}
             task={task}
-            onDelete={() => props.delete(task)}
-            onDone={() => props.done(task)}
-            onEdit={() => props.edit(task)}
+            onDelete={() => del(task)}
+            onDone={() => done(task)}
+            onEdit={() => edit(task)}
           />
         ))}
       </tbody>

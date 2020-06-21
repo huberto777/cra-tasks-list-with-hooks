@@ -1,16 +1,15 @@
-import React from "react";
-import penIcon from "../assets/pen.svg";
+import React from 'react';
 
 function TaskTableRow(props) {
   const { name, done, finishDate, priority, date } = props.task;
   const isFinished = done;
-  let style = {};
+  const style = {};
   if (done) {
-    style.textDecoration = "line-through";
-    style.backgroundColor = "orange";
+    style.textDecoration = 'line-through';
+    style.backgroundColor = 'orange';
   }
   if (priority) {
-    style.color = "red";
+    style.color = 'red';
   }
   return (
     <tr style={style}>
@@ -33,14 +32,11 @@ function TaskTableRow(props) {
           onClick={props.onEdit}
           disabled={isFinished}
         >
-          edit<penIcon/>
+          edit
         </button>
       </td>
       <td>
-        <button
-          className="btn btn-sm btn-outline-danger"
-          onClick={props.onDelete}
-        >
+        <button className="btn btn-sm btn-outline-danger" onClick={props.onDelete}>
           delete
         </button>
       </td>
