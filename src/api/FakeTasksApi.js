@@ -74,8 +74,8 @@ const FakeTasksApi = {
 
     const finishedTask = {
       ...taskToFinish,
-      done: true,
-      finishDate: new Date().toISOString().slice(0, 10),
+      done: !taskToFinish.done,
+      finishDate: taskToFinish.done ? new Date().toISOString().slice(0, 10) : null,
     };
     const index = findIndexByAnId(taskToFinish.id);
     tasks[index] = finishedTask;

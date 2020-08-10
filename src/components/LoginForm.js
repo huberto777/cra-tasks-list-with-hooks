@@ -3,9 +3,11 @@ import React from 'react';
 class LoginForm extends React.Component {
   constructor(props) {
     super(props);
+
     this.emailInput = React.createRef();
     this.passwordInput = React.createRef();
   }
+
   handleSubmit = (event) => {
     event.preventDefault();
     this.props.onLoginAttempt({

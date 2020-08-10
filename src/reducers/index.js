@@ -4,6 +4,7 @@ const initialState = {
   edit: false,
   loading: true,
   error: null,
+  currentTaskId: null,
 };
 
 export const tasksReducer = (state = initialState, action = {}) => {

@@ -8,11 +8,8 @@ function TaskTable({ tasks, del, done, edit }) {
         <tr>
           <th>#</th>
           <th>task name</th>
-          <th>add task</th>
-          <th>finish date</th>
-          <th>ok</th>
-          <th>edit</th>
-          <th>del</th>
+          <th>date</th>
+          <th>edit / del</th>
         </tr>
       </thead>
       <tbody>

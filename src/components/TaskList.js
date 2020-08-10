@@ -72,8 +72,8 @@ function TaskList() {
       ) : (
         <>
           <div className="jumbotron bg-dark text-white col-{-sm|-md|-lg|-xl}">
-            <AddTask addTask={handleCreate} />
             <SearchTask search={(e) => dispatch(searchInput(e))} />
+            <AddTask addTask={handleCreate} />
           </div>
           {error ? 'Nie udało się załadować :(' : null}
           {loading ? 'taski się ładują...' : null}
