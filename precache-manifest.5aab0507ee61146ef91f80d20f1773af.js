@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2eb405b369e744abef04fcfcef798e35",
+    "revision": "8166e6e49bd64ae336bb5cbc8203c0a4",
     "url": "/cra-tasks-list-with-hooks/index.html"
   },
   {
@@ -16,23 +16,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cra-tasks-list-with-hooks/static/js/2.ddbab018.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ddc77f19ae79655bbdd1",
-    "url": "/cra-tasks-list-with-hooks/static/js/3.907953b5.chunk.js"
+    "revision": "b3e4978b4e8b46b2966f",
+    "url": "/cra-tasks-list-with-hooks/static/js/3.bfa66da7.chunk.js"
   },
   {
     "revision": "ef1a6c81a2d25478a437a8a2aa31f36a",
-    "url": "/cra-tasks-list-with-hooks/static/js/3.907953b5.chunk.js.LICENSE.txt"
+    "url": "/cra-tasks-list-with-hooks/static/js/3.bfa66da7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "aab3adb3272530ca0de4",
-    "url": "/cra-tasks-list-with-hooks/static/js/4.1e411ee8.chunk.js"
+    "revision": "489077ee34c1b4a13974",
+    "url": "/cra-tasks-list-with-hooks/static/js/4.3248e3c2.chunk.js"
   },
   {
     "revision": "fb9cb378c1010575a084",
     "url": "/cra-tasks-list-with-hooks/static/js/main.53d1b436.chunk.js"
   },
   {
-    "revision": "c394c4d17ac20cc37d28",
-    "url": "/cra-tasks-list-with-hooks/static/js/runtime-main.190980b7.js"
+    "revision": "9552192b8d1aab926155",
+    "url": "/cra-tasks-list-with-hooks/static/js/runtime-main.eda44f18.js"
   }
 ]);

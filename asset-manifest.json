@@ -2,24 +2,24 @@
   "files": {
     "main.js": "/cra-tasks-list-with-hooks/static/js/main.53d1b436.chunk.js",
     "main.js.map": "/cra-tasks-list-with-hooks/static/js/main.53d1b436.chunk.js.map",
-    "runtime-main.js": "/cra-tasks-list-with-hooks/static/js/runtime-main.190980b7.js",
-    "runtime-main.js.map": "/cra-tasks-list-with-hooks/static/js/runtime-main.190980b7.js.map",
+    "runtime-main.js": "/cra-tasks-list-with-hooks/static/js/runtime-main.eda44f18.js",
+    "runtime-main.js.map": "/cra-tasks-list-with-hooks/static/js/runtime-main.eda44f18.js.map",
     "static/css/2.af3c1da9.chunk.css": "/cra-tasks-list-with-hooks/static/css/2.af3c1da9.chunk.css",
     "static/js/2.ddbab018.chunk.js": "/cra-tasks-list-with-hooks/static/js/2.ddbab018.chunk.js",
     "static/js/2.ddbab018.chunk.js.map": "/cra-tasks-list-with-hooks/static/js/2.ddbab018.chunk.js.map",
-    "static/js/3.907953b5.chunk.js": "/cra-tasks-list-with-hooks/static/js/3.907953b5.chunk.js",
-    "static/js/3.907953b5.chunk.js.map": "/cra-tasks-list-with-hooks/static/js/3.907953b5.chunk.js.map",
-    "static/js/4.1e411ee8.chunk.js": "/cra-tasks-list-with-hooks/static/js/4.1e411ee8.chunk.js",
-    "static/js/4.1e411ee8.chunk.js.map": "/cra-tasks-list-with-hooks/static/js/4.1e411ee8.chunk.js.map",
+    "static/js/3.bfa66da7.chunk.js": "/cra-tasks-list-with-hooks/static/js/3.bfa66da7.chunk.js",
+    "static/js/3.bfa66da7.chunk.js.map": "/cra-tasks-list-with-hooks/static/js/3.bfa66da7.chunk.js.map",
+    "static/js/4.3248e3c2.chunk.js": "/cra-tasks-list-with-hooks/static/js/4.3248e3c2.chunk.js",
+    "static/js/4.3248e3c2.chunk.js.map": "/cra-tasks-list-with-hooks/static/js/4.3248e3c2.chunk.js.map",
     "index.html": "/cra-tasks-list-with-hooks/index.html",
-    "precache-manifest.eb2ceb7c4d57271583cbca5ff9d09355.js": "/cra-tasks-list-with-hooks/precache-manifest.eb2ceb7c4d57271583cbca5ff9d09355.js",
+    "precache-manifest.5aab0507ee61146ef91f80d20f1773af.js": "/cra-tasks-list-with-hooks/precache-manifest.5aab0507ee61146ef91f80d20f1773af.js",
     "service-worker.js": "/cra-tasks-list-with-hooks/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/cra-tasks-list-with-hooks/static/css/2.af3c1da9.chunk.css.map",
     "static/js/2.ddbab018.chunk.js.LICENSE.txt": "/cra-tasks-list-with-hooks/static/js/2.ddbab018.chunk.js.LICENSE.txt",
-    "static/js/3.907953b5.chunk.js.LICENSE.txt": "/cra-tasks-list-with-hooks/static/js/3.907953b5.chunk.js.LICENSE.txt"
+    "static/js/3.bfa66da7.chunk.js.LICENSE.txt": "/cra-tasks-list-with-hooks/static/js/3.bfa66da7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.190980b7.js",
+    "static/js/runtime-main.eda44f18.js",
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.ddbab018.chunk.js",
     "static/js/main.53d1b436.chunk.js"
