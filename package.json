@@ -2,6 +2,7 @@
   "name": "cra-tasks",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://huberto777.github.io/cra-tasks-list-with-hooks/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",

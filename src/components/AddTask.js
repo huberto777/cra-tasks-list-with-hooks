@@ -13,12 +13,12 @@ const validate = (values) => {
   return errors;
 };
 
-const AddTask = ({ addTask }) => {
+const AddTask = ({ addTask, onCancel }) => {
   const minDate = new Date().toISOString().slice(0, 10);
   const formik = useFormik({
     initialValues: {
       name: '',
-      priority: '',
+      priority: false,
       date: minDate,
       done: false,
       finishDate: null,
@@ -63,6 +63,9 @@ const AddTask = ({ addTask }) => {
         </div>
         <button className="btn btn-block btn-outline-warning" type="submit">
           Dodaj
+        </button>
+        <button className="btn btn-block btn-outline-danger" onClick={onCancel}>
+          Anuluj
         </button>
       </form>
     </>

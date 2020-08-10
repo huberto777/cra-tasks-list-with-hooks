@@ -1,5 +1,7 @@
 import React, { useReducer, useEffect } from 'react';
 // import AuthContext from '../context/AuthContext';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import AddTask from './AddTask';
 import TaskTable from './TaskTable';
 import EditTask from './EditTask';
@@ -14,6 +16,8 @@ import {
   replaceTask,
   searchInput,
   searchTask,
+  setCreateMode,
+  cancelCreateMode,
 } from '../actions';
 
 import SearchTask from './SearchTask';
@@ -54,7 +58,7 @@ function TaskList() {
     );
   };
 
-  const { tasks, edit, error, loading } = state;
+  const { tasks, edit, error, loading, create } = state;
 
   return (
     <>
@@ -71,9 +75,22 @@ function TaskList() {
         />
       ) : (
         <>
-          <div className="jumbotron bg-dark text-white col-{-sm|-md|-lg|-xl}">
-            <SearchTask search={(e) => dispatch(searchInput(e))} />
-            <AddTask addTask={handleCreate} />
+          <div className="card bg-dark text-white col-{-sm|-md|-lg|-xl}">
+            <div className="card-body">
+              {create ? (
+                <AddTask addTask={handleCreate} onCancel={() => dispatch(cancelCreateMode())} />
+              ) : (
+                <>
+                  <SearchTask search={(e) => dispatch(searchInput(e))} />
+                  <button
+                    onClick={() => dispatch(setCreateMode())}
+                    className="btn btn-outline-warning"
+                  >
+                    <FontAwesomeIcon icon={faPlus} />
+                  </button>
+                </>
+              )}
+            </div>
           </div>
           {error ? 'Nie udało się załadować :(' : null}
           {loading ? 'taski się ładują...' : null}

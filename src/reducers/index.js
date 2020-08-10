@@ -5,6 +5,7 @@ const initialState = {
   loading: true,
   error: null,
   currentTaskId: null,
+  create: false,
 };
 
 export const tasksReducer = (state = initialState, action = {}) => {
@@ -22,7 +23,7 @@ export const tasksReducer = (state = initialState, action = {}) => {
     case 'ADD_TASK': {
       const { task } = action;
       const tasks = [...state.tasks, task];
-      return { ...state, tasks };
+      return { ...state, tasks, create: false };
     }
     case 'REPLACE_TASK': {
       const { replacedTask } = action;
@@ -63,7 +64,18 @@ export const tasksReducer = (state = initialState, action = {}) => {
         searchQuery: payload,
       };
     }
-
+    case 'CREATE_MODE': {
+      return {
+        ...state,
+        create: true,
+      };
+    }
+    case 'CANCEL_CREATE': {
+      return {
+        ...state,
+        create: false,
+      };
+    }
     default:
       return state;
   }
