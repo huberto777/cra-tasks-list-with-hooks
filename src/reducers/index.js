@@ -1,10 +1,10 @@
 const initialState = {
   tasks: [],
   searchQuery: '',
-  edit: false,
+  editMode: false,
   loading: true,
   error: null,
-  currentTaskId: null,
+  currentEditTask: null,
   create: false,
 };
 
@@ -28,7 +28,7 @@ export const tasksReducer = (state = initialState, action = {}) => {
     case 'REPLACE_TASK': {
       const { replacedTask } = action;
       const tasks = state.tasks.map((task) => (task.id === replacedTask.id ? replacedTask : task));
-      return { ...state, tasks, edit: false };
+      return { ...state, tasks, editMode: false, currentEditTask: null };
     }
     case 'DELETE_TASK': {
       const { removedTask } = action;
@@ -36,8 +36,11 @@ export const tasksReducer = (state = initialState, action = {}) => {
       return { ...state, tasks };
     }
     case 'TASK_EDIT_START': {
-      const task = { action };
-      return { ...state, task, edit: !state.edit };
+      const { task } = action;
+      return { ...state, task, currentEditTask: task.id, editMode: true };
+    }
+    case 'TASK_EDIT_STOP': {
+      return { ...state, currentEditTask: null, editMode: false };
     }
     case 'COMPLETE_TASK': {
       const { completedTask } = action;

@@ -1,5 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPen, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 
 const validate = (values) => {
   const errors = {};
@@ -11,7 +13,7 @@ const validate = (values) => {
   return errors;
 };
 
-const EditTask = ({ update, edit, task }) => {
+const EditTask = ({ update, task, cancelEdit, index }) => {
   const { name } = task;
   const formik = useFormik({
     initialValues: {
@@ -23,34 +25,31 @@ const EditTask = ({ update, edit, task }) => {
     },
   });
   return (
-    <div className="jumbotron bg-dark text-white">
-      <form onSubmit={formik.handleSubmit}>
-        <div className="form-group">
-          <input
-            id="name"
-            name="name"
-            type="text"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.name}
-            className="form-control"
-          />
-          {formik.errors.name ? (
-            <div className="alert alert-danger">{formik.errors.name}</div>
-          ) : null}
-        </div>
-        <div className="form-group">
-          <button className="btn btn-block btn-outline-warning" type="submit">
-            Edytuj
-          </button>
-        </div>
-        <div className="form-group">
-          <button className="btn btn-block btn-outline-danger" onClick={edit}>
-            cancel
-          </button>
-        </div>
-      </form>
-    </div>
+    <>
+      <td>{index + 1}</td>
+      <td>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.name}
+          className="form-control"
+        />
+        {formik.errors.name ? <div className="alert alert-danger">{formik.errors.name}</div> : null}
+      </td>
+      <td />
+      <td>
+        <button className="btn btn-outline-warning" type="submit" onClick={formik.handleSubmit}>
+          <FontAwesomeIcon icon={faPen} />
+        </button>
+
+        <button className="btn btn-outline-danger" onClick={cancelEdit}>
+          <FontAwesomeIcon icon={faWindowClose} />
+        </button>
+      </td>
+    </>
   );
 };
 

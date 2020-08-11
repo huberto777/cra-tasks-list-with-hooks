@@ -1,7 +1,7 @@
 import React from 'react';
 import TaskTableRow from './TaskTableRow';
 
-function TaskTable({ tasks, del, done, edit }) {
+function TaskTable({ tasks, del, done, edit, editMode, onUpdate, currentEditTask, cancelEdit }) {
   return (
     <table className="table table-info table-hover table-striped table-responsive{-sm|-md|-lg|-xl}">
       <thead>
@@ -21,6 +21,10 @@ function TaskTable({ tasks, del, done, edit }) {
             onDelete={() => del(task)}
             onDone={() => done(task)}
             onEdit={() => edit(task)}
+            cancelEdit={cancelEdit}
+            editMode={editMode}
+            onUpdate={onUpdate}
+            currentEditTask={currentEditTask}
           />
         ))}
       </tbody>

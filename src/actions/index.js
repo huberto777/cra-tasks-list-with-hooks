@@ -23,3 +23,14 @@ export const setCreateMode = () => ({
 export const cancelCreateMode = () => ({
   type: 'CANCEL_CREATE',
 });
+export const taskEditStart = (task) => ({
+  type: 'TASK_EDIT_START',
+  task,
+});
+export const taskEditStop = () => ({
+  type: 'TASK_EDIT_STOP',
+});
+export const completeTask = (completedTask) => ({
+  type: 'COMPLETE_TASK',
+  completedTask,
+});
