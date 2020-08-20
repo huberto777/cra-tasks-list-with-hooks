@@ -29,15 +29,14 @@ const EditTask = ({ update, task, cancelEdit, index }) => {
       <td>{index + 1}</td>
       <td>
         <input
-          id="name"
           name="name"
-          type="text"
+          value={formik.values.name}
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
-          value={formik.values.name}
           className="form-control"
+          style={{ margin: 0, fontSize: '1em' }}
         />
-        {formik.errors.name ? <div className="alert alert-danger">{formik.errors.name}</div> : null}
+        {formik.errors.name ? <div className="text text-danger">{formik.errors.name}</div> : null}
       </td>
       <td />
       <td>

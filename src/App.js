@@ -1,11 +1,11 @@
 import React from 'react';
 import jwt from 'jsonwebtoken';
-import ErrorBoundary from './ErrorBoundary';
-import AuthContext from '../context/AuthContext';
-import AuthAPI from '../api/FakeAuthApi';
-import LoginForm from './LoginForm';
+import ErrorBoundary from './components/ErrorBoundary';
+import AuthContext from './context/AuthContext';
+import AuthAPI from './api/FakeAuthApi';
+import LoginForm from './components/LoginForm';
 
-const AuthApp = React.lazy(() => import('./AuthApp'));
+const AuthApp = React.lazy(() => import('./components/AuthApp'));
 
 class App extends React.Component {
   state = {

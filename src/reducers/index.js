@@ -23,7 +23,7 @@ export const tasksReducer = (state = initialState, action = {}) => {
     case 'ADD_TASK': {
       const { task } = action;
       const tasks = [...state.tasks, task];
-      return { ...state, tasks, create: false };
+      return { ...state, tasks, create: false, searchQuery: '' };
     }
     case 'REPLACE_TASK': {
       const { replacedTask } = action;
@@ -77,6 +77,7 @@ export const tasksReducer = (state = initialState, action = {}) => {
       return {
         ...state,
         create: false,
+        searchQuery: '',
       };
     }
     default:

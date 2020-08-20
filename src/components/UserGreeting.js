@@ -1,6 +1,11 @@
-import React, { useContext } from "react";
-import jwt from "jsonwebtoken";
-import AuthContext from "../context/AuthContext";
+import React, { useContext } from 'react';
+import jwt from 'jsonwebtoken';
+import AuthContext from '../context/AuthContext';
+
+function getUserEmail(token) {
+  const decodedToken = jwt.decode(token);
+  return decodedToken.email;
+}
 
 function UserGreeting({ onLogout }) {
   const { accessToken } = useContext(AuthContext);
@@ -24,8 +29,3 @@ function UserGreeting({ onLogout }) {
 }
 
 export default UserGreeting;
-
-function getUserEmail(token) {
-  const decodedToken = jwt.decode(token);
-  return decodedToken.email;
-}

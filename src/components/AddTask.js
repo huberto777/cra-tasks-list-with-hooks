@@ -1,5 +1,7 @@
 import React from 'react';
 import { useFormik } from 'formik';
+import Checkbox from './Checkbox';
+import Input from './Input';
 
 const validate = (values) => {
   const errors = {};
@@ -30,45 +32,33 @@ const AddTask = ({ addTask, onCancel }) => {
     },
   });
   return (
-    <>
-      <form onSubmit={formik.handleSubmit}>
-        <div className="form-group">
-          <input
-            id="name"
-            name="name"
-            type="text"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.name}
-            className="form-control"
-            placeholder="add task"
-          />
-          {formik.errors.name ? (
-            <div className="alert alert-danger">{formik.errors.name}</div>
-          ) : null}
-        </div>
-        <div className="form-group form-check">
-          <input
-            id="priority"
-            name="priority"
-            type="checkbox"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.priority}
-            className="form-check-input"
-          />
-          <label className="form-check-label" htmlFor="priority">
-            priorytet
-          </label>
-        </div>
-        <button className="btn btn-block btn-outline-warning" type="submit">
-          Dodaj
-        </button>
-        <button className="btn btn-block btn-outline-danger" onClick={onCancel}>
-          Anuluj
-        </button>
-      </form>
-    </>
+    <form onSubmit={formik.handleSubmit}>
+      <Input
+        name="name"
+        type="text"
+        onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
+        value={formik.values.name}
+        placeholder="add task"
+      />
+
+      {formik.errors.name ? <div className="text text-danger">{formik.errors.name}</div> : null}
+
+      <Checkbox
+        text="priorytet"
+        name="priority"
+        onChange={formik.handleChange}
+        onBlur={formik.handleBlur}
+        value={formik.values.priority}
+      />
+
+      <button className="btn btn-block btn-outline-warning" type="submit">
+        Dodaj
+      </button>
+      <button className="btn btn-block btn-outline-danger" onClick={onCancel}>
+        Anuluj
+      </button>
+    </form>
   );
 };
 

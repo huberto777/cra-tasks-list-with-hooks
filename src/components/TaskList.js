@@ -61,19 +61,6 @@ function TaskList() {
   const { tasks, editMode, error, loading, create, currentEditTask } = state;
 
   return (
-    // <>
-    //   {edit ? (
-    //     <EditTask
-    //       task={state.task.action.task}
-    //       update={(updatedTask) => {
-    //         const taskToUpdate = { ...state.task, ...updatedTask };
-    //         TasksAPI.replaceTask(taskToUpdate).then((replacedTask) =>
-    //           dispatch(replaceTask(replacedTask)),
-    //         );
-    //       }}
-    //       edit={handleEditTask}
-    //     />
-    //   ) : (
     <>
       <div className="card bg-dark text-white col-{-sm|-md|-lg|-xl}">
         <div className="card-body">
